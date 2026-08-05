@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,21 +8,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@400;600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
 </head>
 <body>
+<div class="lang-switch">
+  <button data-lang-btn="en" onclick="setLang('en')">EN</button>
+  <button data-lang-btn="ru" onclick="setLang('ru')">RU</button>
+</div>
 <div class="wrap">
   <header class="site">
     <div class="eyebrow"><a href="/" style="text-decoration:none;color:inherit">SAY MAMA</a></div>
-    <h1 class="serif">Privacy Policy</h1>
-    <p class="updated">Last updated: August 5, 2026 · <a href="#ru">Русская версия ниже</a></p>
+    <h1 class="serif"><span class="lang-en">Privacy Policy</span><span class="lang-ru">Политика конфиденциальности</span></h1>
+    <p class="updated"><span class="lang-en">Last updated: August 5, 2026</span><span class="lang-ru">Обновлено: 5 августа 2026</span></p>
   </header>
 
   <main>
-    <div class="panel">
+    <div class="panel lang-en">
       <p><strong>In short:</strong> Say Mama is made for parents to use together with toddlers. The account always belongs to the parent. We do not show ads, we do not sell data, the app does not record your child’s voice, and we do not knowingly collect personal information from children.</p>
 
       <h2 class="serif">1. Who we are</h2>
-      <p>Say Mama (“we”, “us”) operates the Say Mama mobile application and this website. Contact: <a href="mailto:samalazau.p@gmail.com">samalazau.p@gmail.com</a>.</p>
+      <p>Say Mama (“we”, “us”) operates the Say Mama mobile application and this website. Contact: <a href="mailto:hi@saymama.me">hi@saymama.me</a>.</p>
 
       <h2 class="serif">2. Children’s privacy</h2>
       <p>The App is designed for use by a parent or guardian together with a child aged 1–3. Accounts, purchases and settings are controlled by the adult. We do not knowingly collect personal information directly from children. The App contains no third-party advertising and no social features, and it does not record audio or access the microphone or camera.</p>
@@ -60,24 +65,19 @@
       <p>We may update this Policy; the current version is always on this page with the date above.</p>
 
       <h2 class="serif">10. Contact</h2>
-      <p><a href="mailto:samalazau.p@gmail.com">samalazau.p@gmail.com</a></p>
+      <p><a href="mailto:hi@saymama.me">hi@saymama.me</a></p>
     </div>
 
-    <hr class="sep" id="ru">
-
-    <div class="panel">
-      <h2 class="serif">Политика конфиденциальности</h2>
-      <p class="updated">Обновлено: 5 августа 2026</p>
-
+    <div class="panel lang-ru">
       <p><strong>Коротко:</strong> Say Mama создано для родителей, занимающихся вместе с малышом. Аккаунт всегда принадлежит взрослому. Мы не показываем рекламу, не продаём данные, приложение не записывает голос ребёнка, и мы сознательно не собираем персональные данные детей.</p>
 
-      <h3>1. Кто мы</h3>
-      <p>Say Mama («мы») управляет мобильным приложением Say Mama и этим сайтом. Контакт: <a href="mailto:samalazau.p@gmail.com">samalazau.p@gmail.com</a>.</p>
+      <h2 class="serif">1. Кто мы</h2>
+      <p>Say Mama («мы») управляет мобильным приложением Say Mama и этим сайтом. Контакт: <a href="mailto:hi@saymama.me">hi@saymama.me</a>.</p>
 
-      <h3>2. Конфиденциальность детей</h3>
+      <h2 class="serif">2. Конфиденциальность детей</h2>
       <p>Приложение предназначено для совместного использования взрослым и ребёнком 1–3 лет. Аккаунт, покупки и настройки контролирует взрослый. Мы сознательно не собираем персональные данные напрямую от детей. В приложении нет сторонней рекламы и социальных функций; приложение не записывает звук и не использует микрофон и камеру.</p>
 
-      <h3>3. Что мы собираем</h3>
+      <h2 class="serif">3. Что мы собираем</h2>
       <ul>
         <li><strong>Данные аккаунта родителя</strong> — при входе через Google/Apple: e-mail, имя и идентификатор авторизации.</li>
         <li><strong>Настройки ребёнка, введённые родителем</strong> — необязательное имя или псевдоним, возрастная группа, уровень речи, настройки занятий. Можно указывать псевдоним.</li>
@@ -86,7 +86,7 @@
         <li><strong>Технические данные</strong> — модель устройства, версии ОС и приложения, отчёты о сбоях.</li>
       </ul>
 
-      <h3>4. Чего мы НЕ делаем</h3>
+      <h2 class="serif">4. Чего мы НЕ делаем</h2>
       <ul>
         <li>Нет сторонней рекламы и рекламных SDK.</li>
         <li>Не продаём и не передаём персональные данные за плату.</li>
@@ -94,28 +94,28 @@
         <li>Нет публичных профилей, чатов и социальных функций.</li>
       </ul>
 
-      <h3>5. Поставщики сервисов</h3>
+      <h2 class="serif">5. Поставщики сервисов</h2>
       <p>Для работы приложения мы используем: Firebase (Google) — авторизация, Adapty — управление подписками, хостинг-провайдера — сервер и доставка контента. Они обрабатывают данные по нашему поручению.</p>
 
-      <h3>6. Хранение и удаление данных</h3>
+      <h2 class="serif">6. Хранение и удаление данных</h2>
       <p>Данные аккаунта хранятся, пока существует аккаунт. Удалить аккаунт и связанные данные можно в приложении (Профиль → Удалить аккаунт) или написав нам. Удаление стирает аккаунт, настройки и прогресс.</p>
 
-      <h3>7. Правовые основания (GDPR)</h3>
+      <h2 class="serif">7. Правовые основания (GDPR)</h2>
       <p>Там, где применим GDPR, мы обрабатываем данные для исполнения договора (работа приложения), на основании согласия (необязательные настройки) и законного интереса (безопасность и работоспособность). Вы вправе запросить доступ, исправление, выгрузку и удаление данных.</p>
 
-      <h3>8. Безопасность</h3>
+      <h2 class="serif">8. Безопасность</h2>
       <p>Данные передаются по шифрованным соединениям и хранятся с контролем доступа. Мы сознательно собираем минимум данных.</p>
 
-      <h3>9. Изменения</h3>
+      <h2 class="serif">9. Изменения</h2>
       <p>Актуальная версия политики всегда на этой странице, дата обновления — вверху.</p>
 
-      <h3>10. Контакт</h3>
-      <p><a href="mailto:samalazau.p@gmail.com">samalazau.p@gmail.com</a></p>
+      <h2 class="serif">10. Контакт</h2>
+      <p><a href="mailto:hi@saymama.me">hi@saymama.me</a></p>
     </div>
   </main>
 
   <footer>
-    © Say Mama · <a href="/">saymama.me</a> · <a href="/terms/">Terms of Use</a>
+    © Say Mama · <a href="/">saymama.me</a> · <a href="/terms/"><span class="lang-en">Terms of Use</span><span class="lang-ru">Условия</span></a>
   </footer>
 </div>
 </body>

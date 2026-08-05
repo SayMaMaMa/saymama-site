@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +8,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@400;600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
 </head>
 <body>
+<div class="lang-switch">
+  <button data-lang-btn="en" onclick="setLang('en')">EN</button>
+  <button data-lang-btn="ru" onclick="setLang('ru')">RU</button>
+</div>
 <div class="wrap">
   <header class="site">
     <div class="eyebrow"><a href="/" style="text-decoration:none;color:inherit">SAY MAMA</a></div>
-    <h1 class="serif">Terms of Use</h1>
-    <p class="updated">Last updated: August 5, 2026 · <a href="#ru">Русская версия ниже</a></p>
+    <h1 class="serif"><span class="lang-en">Terms of Use</span><span class="lang-ru">Условия использования</span></h1>
+    <p class="updated"><span class="lang-en">Last updated: August 5, 2026</span><span class="lang-ru">Обновлено: 5 августа 2026</span></p>
   </header>
 
   <main>
-    <div class="panel">
+    <div class="panel lang-en">
       <h2 class="serif">1. About Say Mama</h2>
       <p>Say Mama (“the App”, “we”, “us”) is a mobile application that helps parents of toddlers aged 1–3 encourage first words through calm picture cards, audio and repetition. The App is intended to be used by a parent or guardian together with their child.</p>
 
@@ -52,54 +57,49 @@
       <p>We may update these Terms; the current version is always available at this page. Continued use of the App after changes means you accept the updated Terms.</p>
 
       <h2 class="serif">10. Contact</h2>
-      <p>Questions: <a href="mailto:samalazau.p@gmail.com">samalazau.p@gmail.com</a></p>
+      <p>Questions: <a href="mailto:hi@saymama.me">hi@saymama.me</a></p>
     </div>
 
-    <hr class="sep" id="ru">
-
-    <div class="panel">
-      <h2 class="serif">Условия использования</h2>
-      <p class="updated">Обновлено: 5 августа 2026</p>
-
-      <h3>1. О приложении</h3>
+    <div class="panel lang-ru">
+      <h2 class="serif">1. О приложении</h2>
       <p>Say Mama («Приложение», «мы») — мобильное приложение, которое помогает родителям малышей 1–3 лет запускать первые слова через спокойные карточки, озвучку и повторение. Приложение предназначено для совместного использования родителем и ребёнком.</p>
 
-      <h3>2. Не медицинская услуга</h3>
+      <h2 class="serif">2. Не медицинская услуга</h2>
       <p>Say Mama — образовательный и развлекательный продукт. Приложение <strong>не является</strong> медицинским изделием, не оказывает медицинских или логопедических услуг и не заменяет консультацию педиатра или логопеда. Если вас беспокоит развитие речи ребёнка — обратитесь к специалисту.</p>
 
-      <h3>3. Аккаунты</h3>
-      <p>Часть функций требует аккаунта (вход через Google или Apple). Аккаунт создаёт и контролирует взрослый (18+) — родитель или опекун; аккаунт никогда не принадлежит ребёнку.</p>
+      <h2 class="serif">3. Аккаунты</h2>
+      <p>Часть функций требует аккаунта (вход через Google или Apple). Аккаунт создаёт и контролирует взрослый (18+) — родитель или опекун; аккаунт никогда не принадлежит ребёнку. Вы отвечаете за безопасность своего устройства и аккаунта.</p>
 
-      <h3>4. Подписки и оплата</h3>
+      <h2 class="serif">4. Подписки и оплата</h2>
       <ul>
         <li>Часть контента доступна по платной подписке (год или месяц) через App Store или Google Play.</li>
         <li>Бесплатный пробный период, если он предлагается, переходит в платную подписку, если не отменить его до окончания.</li>
         <li>Подписка продлевается автоматически. Отменить можно в настройках подписок App Store / Google Play; доступ сохраняется до конца оплаченного периода.</li>
-        <li>Возвраты обрабатывают Apple/Google по своим правилам.</li>
+        <li>Цены показываются в Приложении до покупки. Возвраты обрабатывают Apple/Google по своим правилам.</li>
       </ul>
 
-      <h3>5. Лицензия и допустимое использование</h3>
+      <h2 class="serif">5. Лицензия и допустимое использование</h2>
       <p>Мы предоставляем личную неисключительную лицензию на использование Приложения в семейных целях. Запрещено копировать, продавать и распространять контент Приложения (иллюстрации, анимации, аудио), проводить обратную разработку и использовать Приложение незаконно.</p>
 
-      <h3>6. Изменения контента</h3>
+      <h2 class="serif">6. Изменения контента</h2>
       <p>Мы постоянно развиваем Приложение: темы, карточки, озвучка и функции могут добавляться, меняться и удаляться без предварительного уведомления.</p>
 
-      <h3>7. Отказ от гарантий и ограничение ответственности</h3>
+      <h2 class="serif">7. Отказ от гарантий и ограничение ответственности</h2>
       <p>Приложение предоставляется «как есть». В максимально допустимой законом степени мы не несём ответственности за косвенные убытки; совокупная ответственность ограничена суммой, уплаченной за подписку за последние 12 месяцев.</p>
 
-      <h3>8. Прекращение использования</h3>
+      <h2 class="serif">8. Прекращение использования</h2>
       <p>Вы можете в любой момент удалить аккаунт в Приложении (Профиль → Удалить аккаунт). Мы можем заблокировать аккаунты, нарушающие эти Условия.</p>
 
-      <h3>9. Изменения Условий</h3>
+      <h2 class="serif">9. Изменения Условий</h2>
       <p>Актуальная версия всегда доступна на этой странице. Продолжая пользоваться Приложением после изменений, вы принимаете обновлённые Условия.</p>
 
-      <h3>10. Контакт</h3>
-      <p>Вопросы: <a href="mailto:samalazau.p@gmail.com">samalazau.p@gmail.com</a></p>
+      <h2 class="serif">10. Контакт</h2>
+      <p>Вопросы: <a href="mailto:hi@saymama.me">hi@saymama.me</a></p>
     </div>
   </main>
 
   <footer>
-    © Say Mama · <a href="/">saymama.me</a> · <a href="/privacy/">Privacy Policy</a>
+    © Say Mama · <a href="/">saymama.me</a> · <a href="/privacy/"><span class="lang-en">Privacy Policy</span><span class="lang-ru">Конфиденциальность</span></a>
   </footer>
 </div>
 </body>

@@ -36,3 +36,16 @@ footer a{color:var(--muted)}
 .lang a{color:var(--sage-deep);font-weight:700;text-decoration:none}
 hr.sep{border:none;border-top:1px solid #ECE1CC;margin:44px 0}
 a{color:var(--sage-deep)}
+
+/* Языки: показывается один, переключение кнопкой */
+html[data-lang="en"] .lang-ru{display:none}
+html[data-lang="ru"] .lang-en{display:none}
+.lang-switch{position:absolute;top:18px;right:18px;display:flex;gap:6px}
+.lang-switch button{
+  border:none;cursor:pointer;font:700 12px "Nunito Sans",sans-serif;
+  padding:7px 13px;border-radius:999px;background:var(--chip);color:#6B5E4E;
+  box-shadow:0 2px 8px rgba(90,70,40,.12)
+}
+html[data-lang="en"] .lang-switch [data-lang-btn="en"],
+html[data-lang="ru"] .lang-switch [data-lang-btn="ru"]{background:var(--sage-deep);color:#fff}
+body{position:relative}
