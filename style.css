@@ -49,3 +49,55 @@ html[data-lang="ru"] .lang-en{display:none}
 html[data-lang="en"] .lang-switch [data-lang-btn="en"],
 html[data-lang="ru"] .lang-switch [data-lang-btn="ru"]{background:var(--sage-deep);color:#fff}
 body{position:relative}
+
+/* --- Лендинг --- */
+.hero .sub{margin-top:2px}
+.soon{
+  display:inline-block;background:var(--chip);color:#6B5E4E;font-weight:700;font-size:13px;
+  padding:10px 20px;border-radius:999px;box-shadow:0 2px 8px rgba(90,70,40,.12)
+}
+.phone{
+  width:min(300px,78vw);margin:34px auto 0;border-radius:38px;background:#121110;padding:7px;
+  box-shadow:0 24px 60px rgba(90,70,40,.28)
+}
+.phone img{display:block;width:100%;height:auto;border-radius:31px}
+.center{text-align:center}
+.sub2{color:var(--muted);max-width:52ch;margin:6px auto 0;font-size:15px}
+main h2{margin-top:0}
+section{margin-top:64px}
+.stepgrid{
+  list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
+}
+.stepgrid li{
+  background:var(--panel);border-radius:20px;padding:20px 22px;font-size:14.5px;color:#6B5E4E;
+  box-shadow:0 4px 18px rgba(90,70,40,.08)
+}
+.num{
+  display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:50%;background:#E7EFE4;color:var(--sage-deep);font-weight:800;font-size:14px;
+  margin-bottom:10px
+}
+.quote p{font-size:15.5px}
+.themegrid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px
+}
+@media (max-width:560px){.themegrid{grid-template-columns:repeat(2,1fr)}}
+.themegrid figure{
+  margin:0;background:var(--panel);border-radius:18px;padding:8px;
+  box-shadow:0 4px 18px rgba(90,70,40,.08)
+}
+.themegrid img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.themegrid figcaption{
+  font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:14px;padding:7px 4px 2px
+}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.chip{
+  background:var(--chip);border:1px solid #E4D8C0;border-radius:999px;
+  padding:8px 15px;font-size:13.5px;font-weight:600;color:var(--ink)
+}
+.chip.on{background:var(--sage-deep);border-color:var(--sage-deep);color:#fff}
+.pair{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pair .panel{margin-top:0}
+.pair h3{margin:0 0 8px;font-size:19px}
+.cta{margin-bottom:10px}
