@@ -1,17 +1,18 @@
 :root{
-  --bg:#F9F1E0; --panel:#FBF5E7; --chip:#FFFAF0; --ink:#3E3128;
-  --muted:#8E7F6E; --whisper:#B0A190; --sage:#6F9475; --sage-deep:#3F6A50;
+  --bg:#F7F1E6; --panel:#FFFAF0; --chip:#FFFAF0; --ink:#3A3129;
+  --muted:#6B5E50; --whisper:#8A7B6A; --sage:#3F6B4E; --sage-deep:#3F6B4E;
 }
 *{box-sizing:border-box;margin:0}
 body{
   background:var(--bg); color:var(--ink); line-height:1.65;
-  font-family:"Nunito Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  font-family:"Nunito","Segoe UI",system-ui,-apple-system,sans-serif;
 }
-.serif{font-family:"Playfair Display",Georgia,"Times New Roman",serif}
+/* Заголовки — тот же круглый Nunito, что в приложении, самым плотным начертанием. */
+.serif{font-family:"Nunito","Segoe UI",system-ui,sans-serif;font-weight:900;letter-spacing:-.01em}
 .wrap{max-width:760px;margin:0 auto;padding:48px 22px 80px}
 header.site{ text-align:center; padding-top:26px }
 .eyebrow{font-size:12px;letter-spacing:.35em;color:var(--whisper);font-weight:600}
-h1{font-size:clamp(30px,6vw,44px);font-weight:700;margin:14px 0 10px}
+h1{font-size:clamp(30px,6vw,44px);font-weight:900;line-height:1.15;margin:14px 0 14px}
 h1 em{color:var(--sage);font-style:normal}
 .sub{color:var(--muted);max-width:46ch;margin:0 auto}
 .card-art{
@@ -102,9 +103,9 @@ section{margin-top:64px}
   margin:0;background:var(--panel);border-radius:18px;padding:8px;
   box-shadow:0 4px 18px rgba(90,70,40,.08)
 }
-.themegrid img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.themegrid img{display:block;width:100%;aspect-ratio:1;object-fit:contain}
 .themegrid figcaption{
-  font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:14px;padding:7px 4px 2px
+  font-family:"Nunito",system-ui,sans-serif;font-weight:800;font-size:14px;padding:7px 4px 2px
 }
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
 .chip{
